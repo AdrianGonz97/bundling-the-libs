@@ -1,0 +1,8 @@
+{
+	"name": "rollup-proj",
+	"version": "0.0.0",
+	"type": "module",
+	"devDependencies": {
+		"some-dep-rollup": "workspace:*"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "rolldown-namespaced-imports",
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"build": "pnpm build:rolldown && pnpm build:rollup",
+		"build:rolldown": "rolldown -c",
+		"build:rollup": "rollup -c"
+	},
+	"devDependencies": {
+		"@rollup/plugin-node-resolve": "^15.3.0",
+		"rolldown": "^0.14.0",
+		"rollup": "^4.27.4",
+		"some-dep-rolldown": "workspace:*",
+		"some-dep-rollup": "workspace:*"
+	}
+}
